@@ -1,14 +1,40 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My First Basic Webpage</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smooth Scroll Page</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <h1>Hello, World!</h1>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#section1">Section One</a>
+        <a href="#section2">Section Two</a>
+    </nav>
 
-    <p>This is a paragraph of text on my very first HTML page.</p>
-    <p>It's simple, but it's the start of something amazing!</p>
+    <header id="home">
+        <h1>Welcome to the Smooth Scroll Page</h1>
+        <p>A beautiful header image and effortless navigation.</p>
+        <a href="#section1" class="scroll-down-btn">Explore Below</a>
+    </header>
+    
 
+    <section id="section1">
+        <h2>Section One: Key Content</h2>
+        <p>This is the first section of content. The smooth scrolling effect will seamlessly bring you to this spot when you click "Section One" in the navigation or the "Explore Below" button.</p>
+        <p>Scroll up to go back, or scroll down to continue to the final section.</p>
+        <a href="#section2" class="scroll-next-btn">Go to Section Two</a>
+    </section>
+
+    <section id="section2">
+        <h2>Section Two: Final Thoughts</h2>
+        <p>This is the last section. Notice how clicking any navigation link scrolls you gently to the desired content block, rather than immediately jumping.</p>
+        <p>This is achieved by using a little bit of CSS for the basic effect and JavaScript for a robust, cross-browser solution.</p>
+        <a href="#home" class="scroll-next-btn">Back to Top</a>
+    </section>
+
+    <script src="script.js"></script>
 </body>
 </html>

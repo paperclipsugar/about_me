@@ -1,0 +1,121 @@
+/*
+  1. Base and Smooth Scroll
+  The `scroll-behavior: smooth;` property in the root `html` element
+  handles the native smooth scrolling for most modern browsers.
+*/
+html {
+    scroll-behavior: smooth; /* Native smooth scroll for modern browsers */
+    font-family: sans-serif;
+}
+
+body {
+    margin: 0;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/*
+  2. Navigation Bar
+*/
+nav {
+    position: fixed; /* Keeps the navigation at the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px 0;
+    text-align: center;
+    z-index: 1000; /* Ensures the nav is above other content */
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 8px 15px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ffd700; /* Gold color on hover */
+}
+
+/*
+  3. Header (The "Header Picture")
+*/
+header {
+    /* Replace 'your-header-image.jpg' with your actual image file path */
+    background: url('Images/photo.jpg') no-repeat center center/cover;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    padding-top: 50px; /* Account for fixed navigation bar */
+}
+
+header h1 {
+    font-size: 3em;
+    margin-bottom: 0.2em;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-bottom: 2em;
+}
+
+.scroll-down-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.scroll-down-btn:hover {
+    background: #0056b3;
+}
+
+/*
+  4. Content Sections
+*/
+section {
+    padding: 100px 5%;
+    min-height: 50vh;
+    box-sizing: border-box;
+}
+
+#section1 {
+    background-color: white;
+}
+
+#section2 {
+    background-color: #e0e0e0;
+}
+
+section h2 {
+    color: #007bff;
+    margin-top: 0;
+}
+
+.scroll-next-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 16px;
+    background: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+.scroll-next-btn:hover {
+    background: #555;
+}
